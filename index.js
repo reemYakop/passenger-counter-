@@ -7,8 +7,11 @@ let count = 0
 function increment()
 {
     
-    document.getElementById("count-el").innerText = count 
     count = count+1
     // console.log(count)
+    document.getElementById("count-el").innerText = count 
+
 }
-increment()
+ function save(){
+    console.log(count)
+ }
