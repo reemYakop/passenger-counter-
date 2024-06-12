@@ -4,6 +4,7 @@
 // Increment the count variable when the button is clicked 
 // change the count-el n the HTML to reflect he new count
 let count = 0
+let saveEl = document.getElementById("save-el")
 function increment()
 {
     
@@ -13,5 +14,7 @@ function increment()
 
 }
  function save(){
+    let countStr = " " +count + " -"
+    saveEl.innerText += countStr
     console.log(count)
  }
